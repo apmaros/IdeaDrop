@@ -1,5 +1,7 @@
-<div id="idea-list" class="row">
-    <div class="col-sm-4 col-sm-offset-4 col-md-8">
-      <input type="checkbox" ng-click="deleteIdea(ideaContent._id)"> {{ ideaContent.text }}
-    </div>
+<div ng-repeat="idea in ideas">
+  <div id="idea-list" class="row">
+      <div class="col-sm-4 col-sm-offset-4 col-md-8">
+        <input type="checkbox" ng-click="deleteIdea(idea._id)"> {{ idea.text }}
+      </div>
+  </div>
 </div>

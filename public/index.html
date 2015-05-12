@@ -35,17 +35,16 @@
 
         <!-- HEADER AND TODO COUNT -->
         <div class="jumbotron text-center">
-            <h1>Don't forget, write it down.</h1>
-            <small>Remembered <span class="label label-info">{{ ideas.length }}</span> ideas</small>
+            <h1>Don't forget, write your ideas down.</h1>
         </div>
 
         <!-- IDEA LIST -->
         <div id="idea-list" class="row">
             <div class="col-sm-4 col-sm-offset-4">
 
-              <div ng-repeat="idea in ideas">
-                <cst-idea info="idea"></cst-idea>
-              </div>
+              <!-- <div ng-repeat="idea in ideas"> -->
+                <cst-idea></cst-idea>
+              <!-- </div> -->
 
             </div>
         </div>
