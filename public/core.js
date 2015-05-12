@@ -1,5 +1,5 @@
 // public/core.js
-var scotchTodo = angular.module('scotchTodo', []);
+var ideaDrop = angular.module('ideaDrop', []);
 
 function mainController($scope, $http) {
   
