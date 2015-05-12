@@ -2,12 +2,6 @@
 var ideaDrop = angular.module('ideaDrop', []);
 
 function mainController($scope, $http) {
-  
-  $scope.customer = {
-    name: 'Naomi',
-    address: '1600 Amphitheatre'
-  };
-
   $scope.formData = {};
 
   // when landing on the page, get all todos and show them
@@ -32,17 +26,4 @@ function mainController($scope, $http) {
               console.log('Error: ' + data);
           });
   };
-
-  // delete a todo after checking it
-  $scope.deleteIdea = function(id) {
-      $http.delete('/api/todos/' + id)
-          .success(function(data) {
-              $scope.ideas = data;
-              console.log(data);
-          })
-          .error(function(data) {
-              console.log('Error: ' + data);
-          });
-  };
-
 }
