@@ -2,6 +2,12 @@
 var scotchTodo = angular.module('scotchTodo', []);
 
 function mainController($scope, $http) {
+  
+  $scope.customer = {
+    name: 'Naomi',
+    address: '1600 Amphitheatre'
+  };
+
   $scope.formData = {};
 
   // when landing on the page, get all todos and show them
